@@ -1,0 +1,17 @@
+
+
+{% if all_events%}
+<ul>
+    {% for event in all_events%}
+    <li><a href="/photos/{{event.id}}">{{event.event_name}}</a> </li>
+
+    {%endfor%}
+</ul>
+
+{% else %}
+
+<h3>There is no image right now. Please Create Events. Please Create Events and add images
+
+</h3>
+
+{%endif%}
